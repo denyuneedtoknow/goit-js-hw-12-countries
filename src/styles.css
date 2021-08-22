@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(23, 201, 255);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.input-field {
+  margin: 50px;
+  width: 300px;
+  height: 30px;
+}
+
+.countries-founded-list {
+  list-style-type: none;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.card__image {
+  margin-left: 50px;
+  width: 160px;
+  height: auto;
+}
+.card__name {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+}
