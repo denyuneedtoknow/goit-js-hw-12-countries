@@ -4,8 +4,6 @@ import fetchCountry from './fetchCountries';
 import debounce from 'lodash.debounce';
 import refs from './refs';
 
-// const requestAddress = `${refs.addressOfData}${refs.input}`;
-// console.log(refs.addressOfData);
 function address(e) {
   e.preventDefault();
   const input = String(document.querySelector('#countryName').value);
@@ -14,6 +12,10 @@ function address(e) {
   fetchCountry(requestAddress)
     .then(countries => {
       console.log(countries);
+      if (countries.length > 10) {
+        alert('too many');
+        return;
+      }
     })
     .catch(err => {
       console.log('error');
